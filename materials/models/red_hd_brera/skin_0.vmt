@@ -1,0 +1,13 @@
+VertexLitGeneric
+{
+	$basetexture			"models\red_hd_brera\skin_0.vtf"
+
+	$blendtintbybasealpha	1
+
+	$detail					"models\red_hd_brera\skin_detail.vtf"
+	$detailblendfactor		0.08
+	$detailscale			1000
+	$envmap					env_cubemap
+	$envmapsaturation		0.5
+	$envmaptint 			"[.5 .5 .5]"
+}

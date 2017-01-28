@@ -1,0 +1,15 @@
+VertexLitGeneric
+{
+	$basetexture		"models\red_hd_brera\black.vtf"
+
+	$color2				"[1 1 1]"
+
+	Proxies
+	{
+		Equals
+		{
+			srcVar1		$color2
+			resultVar	$color
+		}
+	}
+}

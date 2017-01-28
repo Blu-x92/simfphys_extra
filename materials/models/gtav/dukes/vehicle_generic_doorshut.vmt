@@ -1,0 +1,15 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/gtav/dukes/vehicle_generic_doorshut"
+	"$bumpmap" "models/gtav/dukes/vehicle_generic_detail2_normal"
+	"$nodecal" "1"
+	"$phong" "1" 
+	"$phongboost" "2" 
+	"$phongfresnelranges" "[3 1 1]" 
+	"$phongexponent" 150
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.7 0.7 0.7]"
+	"$halflambert" 1
+	"$lightwarptexture" "models/gtav/dukes/lightfix"
+
+}
