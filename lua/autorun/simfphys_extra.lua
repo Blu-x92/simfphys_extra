@@ -546,7 +546,7 @@ local V = {
 		FrontWheelRadius = 15,
 		RearWheelRadius = 15,
 		
-		SeatOffset = Vector(0,0,-1),
+		SeatOffset = Vector(0,0,-2.5),
 		SeatPitch = 0,
 		
 		PassengerSeats = {
