@@ -700,6 +700,19 @@ local V = {
 			}
 		},
 		
+		ModelInfo = {
+			LinkDoorAnims = {
+				["enter2"] = {
+					enter = "enter1",
+					exit = "exit1",
+				},
+				["enter1"] = {
+					enter = "enter2",
+					exit = "exit2",
+				}
+			}
+		},
+		
 		FrontHeight = 10,
 		FrontConstant = 28000,
 		FrontDamping = 2800,
