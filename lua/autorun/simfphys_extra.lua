@@ -201,7 +201,21 @@ local light_table = {
 	BodyGroups = {
 		On = {8,0},
 		Off = {8,1}
+	},
+	--[[
+	SubMaterials = {
+		Lowbeam = {
+			[10] = "models/gtav/dukes/lowbeam"
+		},
+		Highbeam = {
+			[10] = "models/gtav/dukes/highbeam"
+		},
+		Foglight = {
+			[5] = "lights/white",
+			[6] = "lights/white"
+		},
 	}
+	]]--
 }
 list.Set( "simfphys_lights", "dukes", light_table)
 
