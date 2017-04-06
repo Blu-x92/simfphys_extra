@@ -10,143 +10,65 @@ local light_table = {
 	R_RearLampAng = Angle(40,-90,0),
 	
 	Headlight_sprites = { 
-		{pos = Vector(35,103.2,33.1),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(33.75,103.4,33.05),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(32.5,103.6,33),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(31.25,103.8,32.95),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(30,104,32.9),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(28.75,104.2,32.85),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(27.5,104.4,32.8),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(26.25,104.6,32.75),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(25,104.8,32.7),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(23.75,105,32.75),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(22.5,105.2,32.6),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(21.25,105.4,32.55),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(20,105.6,32.5),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(18.75,105.8,32.45),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		
-		{pos = Vector(35,103.2,30.8),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(33.75,103.4,30.75),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(32.5,103.6,30.7),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(31.25,103.8,30.65),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(30,104,30.6),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(28.75,104.2,30.55),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(27.5,104.4,30.5),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(26.25,104.6,30.45),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(25,104.8,30.4),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(23.75,105,30.45),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(22.5,105.2,30.3),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(21.25,105.4,30.25),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(20,105.6,30.2),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(18.75,105.8,30.15),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		
-		{pos = Vector(35,103.2,28.5),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(33.75,103.4,28.45),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(32.5,103.6,28.4),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(31.25,103.8,28.35),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(30,104,28.3),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(28.75,104.2,28.25),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(27.5,104.4,28.2),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(26.25,104.6,28.15),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(25,104.8,28.1),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(23.75,105,28.15),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(22.5,105.2,28),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(21.25,105.4,27.95),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(20,105.6,27.9),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(18.75,105.8,27.85),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		
-		{pos = Vector(-35,103.2,33.1),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-33.75,103.4,33.05),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-32.5,103.6,33),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-31.25,103.8,32.95),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-30,104,32.9),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-28.75,104.2,32.85),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-27.5,104.4,32.8),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-26.25,104.6,32.75),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-25,104.8,32.7),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-23.75,105,32.75),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-22.5,105.2,32.6),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-21.25,105.4,32.55),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-20,105.6,32.5),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-18.75,105.8,32.45),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		
-		{pos = Vector(-35,103.2,30.8),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-33.75,103.4,30.75),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-32.5,103.6,30.7),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-31.25,103.8,30.65),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-30,104,30.6),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-28.75,104.2,30.55),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-27.5,104.4,30.5),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-26.25,104.6,30.45),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-25,104.8,30.4),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-23.75,105,30.45),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-22.5,105.2,30.3),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-21.25,105.4,30.25),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-20,105.6,30.2),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-18.75,105.8,30.15),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		
-		{pos = Vector(-35,103.2,28.5),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-33.75,103.4,28.45),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-32.5,103.6,28.4),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-31.25,103.8,28.35),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-30,104,28.3),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-28.75,104.2,28.25),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-27.5,104.4,28.2),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-26.25,104.6,28.15),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-25,104.8,28.1),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-23.75,105,28.15),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-22.5,105.2,28),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-21.25,105.4,27.95),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-20,105.6,27.9),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-18.75,105.8,27.85),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		
-		{pos = Vector(-23.5,106,30.23),size = 30, color = Color( 220,205,160,100)},
-		{pos = Vector(-28.5,106,30.36),size = 30, color = Color( 220,205,160,100)},
-		{pos = Vector(23.5,106,30.23),size = 30, color = Color( 220,205,160,100)},
-		{pos = Vector(28.5,106,30.36),size = 30, color = Color( 220,205,160,100)},
+		{pos = Vector(-23,106,30.23),size = 60, color = Color( 220,220,220,50)},
+		{pos = Vector(-30,106,30.36),size = 60, color = Color( 220,220,220,50)},
+		{pos = Vector(23,106,30.23),size = 60, color = Color( 220,220,220,50)},
+		{pos = Vector(30,106,30.36),size = 60, color = Color( 220,220,220,50)},
 	},
 	
 	Headlamp_sprites = { 
-		{pos = Vector(-23.5,106,30.23),size = 80},
-		{pos = Vector(-28.5,106,30.36),size = 80},
-		{pos = Vector(23.5,106,30.23),size = 80},
-		{pos = Vector(28.5,106,30.36),size = 80}
+		{pos = Vector(-26,106,30.23),material = "sprites/light_ignorez",size = 80, color = Color( 220,220,220,120)},
+		{pos = Vector(26,106,30.23),material = "sprites/light_ignorez",size = 80, color = Color( 220,220,220,120)},
 	},
 	
 	Rearlight_sprites = {
-		Vector(-34,-109.63,40.75),Vector(-35.4,-109.63,40.75),Vector(-36.8,-109.63,40.75),Vector(-36.8,-109.63,38),Vector(-35.4,-109.63,38),Vector(-34,-109.63,38),
-		Vector(-23,-109.63,40.75),Vector(-24.4,-109.63,40.75),Vector(-25.8,-109.63,40.75),Vector(-25.8,-109.63,38),Vector(-24.4,-109.63,38),Vector(-23,-109.63,38),
+		{pos = Vector(-35.5,-109.63,40.75),material = "sprites/light_ignorez",size = 30,color = Color( 255, 0, 0,  50)},
+		{pos = Vector(-35.5,-109.63,38),material = "sprites/light_ignorez",size = 30,color = Color( 255, 0, 0,  50)},
 		
-		Vector(34,-109.63,40.75),Vector(35.4,-109.63,40.75),Vector(36.8,-109.63,40.75),Vector(36.8,-109.63,38),Vector(35.4,-109.63,38),Vector(34,-109.63,38),
-		Vector(23,-109.63,40.75),Vector(24.4,-109.63,40.75),Vector(25.8,-109.63,40.75),Vector(25.8,-109.63,38),Vector(24.4,-109.63,38),Vector(23,-109.63,38),
+		{pos = Vector(-24.5,-109.63,40.75),material = "sprites/light_ignorez",size = 30,color = Color( 255, 0, 0,  50)},
+		{pos = Vector(-24.5,-109.63,38),material = "sprites/light_ignorez",size = 30,color = Color( 255, 0, 0,  50)},
+		
+		
+		{pos = Vector(35.5,-109.63,40.75),material = "sprites/light_ignorez",size = 30,color = Color( 255, 0, 0,  50)},
+		{pos = Vector(35.5,-109.63,38),material = "sprites/light_ignorez",size = 30,color = Color( 255, 0, 0,  50)},
+		
+		{pos = Vector(24.5,-109.63,40.75),material = "sprites/light_ignorez",size = 30,color = Color( 255, 0, 0,  50)},
+		{pos = Vector(24.5,-109.63,38),material = "sprites/light_ignorez",size = 30,color = Color( 255, 0, 0,  50)},
 	},
 	Brakelight_sprites = {
-		Vector(-34,-109.63,40.75),Vector(-35.4,-109.63,40.75),Vector(-36.8,-109.63,40.75),Vector(-36.8,-109.63,38),Vector(-35.4,-109.63,38),Vector(-34,-109.63,38),
-		Vector(-23,-109.63,40.75),Vector(-24.4,-109.63,40.75),Vector(-25.8,-109.63,40.75),Vector(-25.8,-109.63,38),Vector(-24.4,-109.63,38),Vector(-23,-109.63,38),
+		{pos = Vector(-35.5,-109.63,40.75),material = "sprites/light_ignorez",size = 33,color = Color( 255, 0, 0,  50)},
+		{pos = Vector(-35.5,-109.63,38),material = "sprites/light_ignorez",size = 33,color = Color( 255, 0, 0,  50)},
 		
-		Vector(34,-109.63,40.75),Vector(35.4,-109.63,40.75),Vector(36.8,-109.63,40.75),Vector(36.8,-109.63,38),Vector(35.4,-109.63,38),Vector(34,-109.63,38),
-		Vector(23,-109.63,40.75),Vector(24.4,-109.63,40.75),Vector(25.8,-109.63,40.75),Vector(25.8,-109.63,38),Vector(24.4,-109.63,38),Vector(23,-109.63,38),
+		{pos = Vector(-24.5,-109.63,40.75),material = "sprites/light_ignorez",size = 33,color = Color( 255, 0, 0,  50)},
+		{pos = Vector(-24.5,-109.63,38),material = "sprites/light_ignorez",size = 33,color = Color( 255, 0, 0,  50)},
+		
+		
+		{pos = Vector(35.5,-109.63,40.75),material = "sprites/light_ignorez",size = 33,color = Color( 255, 0, 0,  50)},
+		{pos = Vector(35.5,-109.63,38),material = "sprites/light_ignorez",size = 33,color = Color( 255, 0, 0,  50)},
+		
+		{pos = Vector(24.5,-109.63,40.75),material = "sprites/light_ignorez",size = 33,color = Color( 255, 0, 0,  50)},
+		{pos = Vector(24.5,-109.63,38),material = "sprites/light_ignorez",size = 33,color = Color( 255, 0, 0,  50)},
 	},
 	RearMarker_sprites = {
 		Vector(-42.87,-101.7,35.71),
 		Vector(42.87,-101.7,35.71)
 	},
 	FogLight_sprites = {
-		{pos = Vector(-26.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-27.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-28.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-29.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-30.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-31.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(-32.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
+		{pos = Vector(-26.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
+		{pos = Vector(-27.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
+		{pos = Vector(-28.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
+		{pos = Vector(-29.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
+		{pos = Vector(-30.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
+		{pos = Vector(-31.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
+		{pos = Vector(-32.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
 		
-		{pos = Vector(26.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(27.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(28.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(29.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(30.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(31.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
-		{pos = Vector(32.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,205,160,100)},
+		{pos = Vector(26.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
+		{pos = Vector(27.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
+		{pos = Vector(28.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
+		{pos = Vector(29.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
+		{pos = Vector(30.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
+		{pos = Vector(31.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
+		{pos = Vector(32.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
 	},
 	
 	ems_sounds = {"simulated_vehicles/police/siren_madmax.wav","common/null.wav"},
@@ -158,6 +80,39 @@ local light_table = {
 			Colors = {Color(0,0,250,250),Color(0,0,255,255),Color(0,0,250,250),Color(0,0,200,200),Color(0,0,150,150),Color(0,0,100,100),Color(0,0,50,50),Color(0,0,0,0)}, -- the script will go from color to color
 			Speed = 0.05,
 		}
+	},
+	
+	SubMaterials = {
+		off = {
+			Base = {
+				[1] = "",
+				[3] = ""
+			},
+			Brake = {
+				[1] = "models/madmax/lights/brake_1",
+				[3] = ""
+			},
+		},
+		on_lowbeam = {
+			Base = {
+				[1] = "models/madmax/lights/brake_1",
+				[3] = "models/madmax/lights/lowbeam"
+			},
+			Brake = {
+				[1] = "models/madmax/lights/brake_2",
+				[3] = "models/madmax/lights/lowbeam"
+			},
+		},
+		on_highbeam = {
+			Base = {
+				[1] = "models/madmax/lights/brake_1",
+				[3] = "models/madmax/lights/highbeam"
+			},
+			Brake = {
+				[1] = "models/madmax/lights/brake_2",
+				[3] = "models/madmax/lights/highbeam"
+			},
+		},
 	}
 }
 list.Set( "simfphys_lights", "madmax", light_table)
