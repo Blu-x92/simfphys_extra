@@ -183,17 +183,16 @@ local light_table = {
 		{pos = Vector(102,-21,-1),size = 40},
 	},
 	Rearlight_sprites = {
-		Vector(-120,28,5),Vector(-120,27,5),Vector(-120,26,5),Vector(-120,25,5),Vector(-120,24,5),Vector(-120,23,5),Vector(-120,22,5),
-		
-		Vector(-120,-28,5),Vector(-120,-27,5),Vector(-120,-26,5),Vector(-120,-25,5),Vector(-120,-24,5),Vector(-120,-23,5),Vector(-120,-22,5)
+		{pos = Vector(-122,25.5,5),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  250)},
+		{pos = Vector(-122,-25.5,5),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  250)},
 	},
 	Brakelight_sprites = {
-		Vector(-120,17,5),Vector(-120,16,5),Vector(-120,15,5),Vector(-120,14,5),Vector(-120,13,5),Vector(-120,12,5),Vector(-120,11,5),Vector(-120,10,5),
-		Vector(-120,-17,5),Vector(-120,-16,5),Vector(-120,-15,5),Vector(-120,-14,5),Vector(-120,-13,5),Vector(-120,-12,5),Vector(-120,-11,5),Vector(-120,-10,5)
+		{pos = Vector(-122,13.5,5),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  250)},
+		{pos = Vector(-122,-13.5,5),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  250)},
 	},
 	Reverselight_sprites = {
-		Vector(-120,18.5,5),Vector(-120,20.5,5),
-		Vector(-120,-18.5,5),Vector(-120,-20.5,5)
+		{pos = Vector(-120,19.5,5),material = "sprites/light_ignorez",size = 25,color = Color( 255, 255, 255, 100)},
+		{pos = Vector(-120,-19.5,5),material = "sprites/light_ignorez",size = 25,color = Color( 255, 255, 255, 100)},
 	},
 	
 	DelayOn = 0.5,
@@ -202,20 +201,51 @@ local light_table = {
 		On = {8,0},
 		Off = {8,1}
 	},
-	--[[
+	
 	SubMaterials = {
-		Lowbeam = {
-			[10] = "models/gtav/dukes/lowbeam"
+		off = {
+			Base = {
+				[10] = ""
+			},
+			Brake = {
+				[10] = "models/gtav/dukes/lights/brake"
+			},
+			Reverse = {
+				[10] = "models/gtav/dukes/lights/reverse"
+			},
+			Brake_Reverse = {
+				[10] = "models/gtav/dukes/lights/brake_reverse"
+			},
 		},
-		Highbeam = {
-			[10] = "models/gtav/dukes/highbeam"
+		on_lowbeam = {
+			Base = {
+				[10] = "models/gtav/dukes/lights/lowbeam"
+			},
+			Brake = {
+				[10] = "models/gtav/dukes/lights/lowbeam_brake"
+			},
+			Reverse = {
+				[10] = "models/gtav/dukes/lights/lowbeam_reverse"
+			},
+			Brake_Reverse = {
+				[10] = "models/gtav/dukes/lights/lowbeam_brake_reverse"
+			},
 		},
-		Foglight = {
-			[5] = "lights/white",
-			[6] = "lights/white"
+		on_highbeam = {
+			Base = {
+				[10] = "models/gtav/dukes/lights/highbeam"
+			},
+			Brake = {
+				[10] = "models/gtav/dukes/lights/highbeam_brake"
+			},
+			Reverse = {
+				[10] = "models/gtav/dukes/lights/highbeam_reverse"
+			},
+			Brake_Reverse = {
+				[10] = "models/gtav/dukes/lights/highbeam_brake_reverse"
+			},
 		},
 	}
-	]]--
 }
 list.Set( "simfphys_lights", "dukes", light_table)
 
