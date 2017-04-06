@@ -183,16 +183,16 @@ local light_table = {
 		{pos = Vector(102,-21,-1),size = 40},
 	},
 	Rearlight_sprites = {
-		{pos = Vector(-122,25.5,5),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  250)},
-		{pos = Vector(-122,-25.5,5),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  250)},
+		{pos = Vector(-121,25.5,5),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  150)},
+		{pos = Vector(-121,-25.5,5),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  150)},
 	},
 	Brakelight_sprites = {
-		{pos = Vector(-122,13.5,5),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  250)},
-		{pos = Vector(-122,-13.5,5),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  250)},
+		{pos = Vector(-121,13.5,5),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  150)},
+		{pos = Vector(-121,-13.5,5),material = "sprites/light_ignorez",size = 45,color = Color( 255, 0, 0,  150)},
 	},
 	Reverselight_sprites = {
-		{pos = Vector(-120,19.5,5),material = "sprites/light_ignorez",size = 25,color = Color( 255, 255, 255, 100)},
-		{pos = Vector(-120,-19.5,5),material = "sprites/light_ignorez",size = 25,color = Color( 255, 255, 255, 100)},
+		{pos = Vector(-121,19.5,5),material = "sprites/light_ignorez",size = 25,color = Color( 255, 255, 255, 100)},
+		{pos = Vector(-121,-19.5,5),material = "sprites/light_ignorez",size = 25,color = Color( 255, 255, 255, 100)},
 	},
 	
 	DelayOn = 0.5,
