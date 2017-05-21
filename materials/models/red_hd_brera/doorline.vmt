@@ -1,9 +1,0 @@
-VertexLitGeneric
-{
-	$basetexture			"models\red_hd_brera\doorline.vtf"
-
-	$allowalphatocoverage	1
-	$alphatest				1
-
-	$bumpmap				"models\red_hd_brera\doorline_normal.vtf"
-}

@@ -891,12 +891,14 @@ local V = {
 		Gears = {-0.12,0,0.12,0.21,0.32,0.42,0.5}
 	}
 }
-list.Set( "simfphys_vehicles", "sim_fphys_alfons", V )
+if file.Exists( "models/red_hd_brera/red_hd_brera.mdl", "GAME" ) then
+	list.Set( "simfphys_vehicles", "sim_fphys_alfons", V )
+end
 
 
 local V = {
 	Name = "GTA 5 Dukes",
-	Model = "models/winningrook/gtav/dukes/dukes.mdl",
+	Model = "models/blu/gtav/dukes/dukes.mdl",
 	Class = "gmod_sent_vehicle_fphysics_base",
 	Category = "Base",
 	SpawnOffset = Vector(0,0,20),
