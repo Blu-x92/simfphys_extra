@@ -634,6 +634,8 @@ local V = {
 		
 		LightsTable = "trabbi",
 		
+		FirstPersonViewPos =  Vector(0,-15,6),
+		
 		AirFriction = -8000,
 		
 		CustomWheels = true,
@@ -728,6 +730,8 @@ local V = {
 		AirFriction = -8000,
 		
 		EnginePos = Vector(0,56.38,38.7),
+		
+		FirstPersonViewPos =  Vector(0,-15,6),
 		
 		LightsTable = "trabbi",
 		
