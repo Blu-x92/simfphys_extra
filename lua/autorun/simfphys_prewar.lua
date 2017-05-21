@@ -328,7 +328,7 @@ list.Set( "simfphys_lights", "zaz", light_table)
 
 local V = {
 	Name = "HL2 Golf",
-	Model = "models/salza/hatchback/pw_hatchback.mdl",
+	Model = "models/blu/hatchback/pw_hatchback.mdl",
 	Class = "gmod_sent_vehicle_fphysics_base",
 	Category = Category,
 	SpawnAngleOffset = 90,
@@ -350,7 +350,7 @@ local V = {
 		CustomWheelPosRR = Vector(-46,-29.5,12),
 		CustomWheelAngleOffset = Angle(0,90,0),
 		
-		CustomMassCenter = Vector(0,0,0),
+		CustomMassCenter = Vector(0,0,2),
 		
 		CustomSteerAngle = 35,
 		
@@ -426,7 +426,7 @@ list.Set( "simfphys_vehicles", "sim_fphys_pwhatchback", V )
 
 local V = {
 	Name = "HL2 Van",
-	Model = "models/salza/van/pw_van.mdl",
+	Model = "models/blu/van/pw_van.mdl",
 	Class = "gmod_sent_vehicle_fphysics_base",
 	Category = Category,
 	SpawnAngleOffset = 90,
@@ -448,7 +448,7 @@ local V = {
 		CustomWheelPosRR = Vector(-72,-44,20),
 		CustomWheelAngleOffset = Angle(0,-90,0),
 		
-		CustomMassCenter = Vector(0,0,10),
+		CustomMassCenter = Vector(0,0,15),
 		
 		CustomSteerAngle = 35,
 		
@@ -473,13 +473,13 @@ local V = {
 		
 		FrontHeight = 12,
 		FrontConstant = 45000,
-		FrontDamping = 5000,
-		FrontRelativeDamping = 5000,
+		FrontDamping = 3500,
+		FrontRelativeDamping = 3500,
 		
 		RearHeight = 12,
 		RearConstant = 45000,
-		RearDamping = 5000,
-		RearRelativeDamping = 5000,
+		RearDamping = 3500,
+		RearRelativeDamping = 3500,
 		
 		FastSteeringAngle = 10,
 		SteeringFadeFastSpeed = 350,
@@ -488,7 +488,7 @@ local V = {
 		
 		MaxGrip = 45,
 		Efficiency = 1.8,
-		GripOffset = 0,
+		GripOffset = -2,
 		BrakePower = 55,
 		
 		IdleRPM = 750,
@@ -523,7 +523,7 @@ list.Set( "simfphys_vehicles", "sim_fphys_pwvan", V )
 
 local V = {
 	Name = "HL2 Moskvich",
-	Model = "models/salza/moskvich/moskvich.mdl",
+	Model = "models/blu/moskvich/moskvich.mdl",
 	Class = "gmod_sent_vehicle_fphysics_base",
 	Category = Category,
 	SpawnAngleOffset = 90,
@@ -623,7 +623,7 @@ list.Set( "simfphys_vehicles", "sim_fphys_pwmoskvich", V )
 
 local V = {
 	Name = "HL2 Trabant",
-	Model = "models/salza/trabant/trabant.mdl",
+	Model = "models/blu/trabant/trabant.mdl",
 	Class = "gmod_sent_vehicle_fphysics_base",
 	Category = Category,
 
@@ -633,6 +633,8 @@ local V = {
 		EnginePos = Vector(0.6,56.38,38.7),
 		
 		LightsTable = "trabbi",
+		
+		AirFriction = -8000,
 		
 		CustomWheels = true,
 		CustomSuspensionTravel = 10,
@@ -644,7 +646,7 @@ local V = {
 		CustomWheelPosRR = Vector(32,-41.5,12),
 		CustomWheelAngleOffset = Angle(0,0,0),
 		
-		CustomMassCenter = Vector(0,0,1),
+		CustomMassCenter = Vector(0,0,3),
 		
 		CustomSteerAngle = 35,
 		
@@ -663,15 +665,15 @@ local V = {
 			}
 		},
 		
-		FrontHeight = 6.5,
-		FrontConstant = 24000,
-		FrontDamping = 1200,
-		FrontRelativeDamping = 1200,
+		FrontHeight = 7,
+		FrontConstant = 20000,
+		FrontDamping = 1800,
+		FrontRelativeDamping = 1800,
 		
-		RearHeight = 6.5,
-		RearConstant = 24000,
-		RearDamping = 1200,
-		RearRelativeDamping = 1200,
+		RearHeight = 7,
+		RearConstant = 20000,
+		RearDamping = 1800,
+		RearRelativeDamping = 1800,
 		
 		FastSteeringAngle = 10,
 		SteeringFadeFastSpeed = 400,
@@ -695,7 +697,7 @@ local V = {
 		
 		EngineSoundPreset = -1,
 		
-		snd_pitch = 1,
+		snd_pitch = 0.9,
 		snd_idle = "simulated_vehicles/generic5/generic5_idle.wav",
 		
 		snd_low = "simulated_vehicles/generic5/generic5_low.wav",
@@ -716,12 +718,14 @@ list.Set( "simfphys_vehicles", "sim_fphys_pwtrabant", V )
 
 local V = {
 	Name = "HL2 Trabant 2",
-	Model = "models/salza/trabant/trabant02.mdl",
+	Model = "models/blu/trabant/trabant02.mdl",
 	Class = "gmod_sent_vehicle_fphysics_base",
 	Category = Category,
 
 	Members = {
 		Mass = 850,
+		
+		AirFriction = -8000,
 		
 		EnginePos = Vector(0,56.38,38.7),
 		
@@ -737,7 +741,7 @@ local V = {
 		CustomWheelPosRR = Vector(32,-41.5,12),
 		CustomWheelAngleOffset = Angle(0,0,0),
 		
-		CustomMassCenter = Vector(0,0,1),
+		CustomMassCenter = Vector(0,0,3),
 		
 		CustomSteerAngle = 35,
 		
@@ -756,15 +760,15 @@ local V = {
 			}
 		},
 		
-		FrontHeight = 6.5,
-		FrontConstant = 24000,
-		FrontDamping = 1200,
-		FrontRelativeDamping = 1200,
+		FrontHeight = 7,
+		FrontConstant = 20000,
+		FrontDamping = 1800,
+		FrontRelativeDamping = 1800,
 		
-		RearHeight = 6.5,
-		RearConstant = 24000,
-		RearDamping = 1200,
-		RearRelativeDamping = 1200,
+		RearHeight = 7,
+		RearConstant = 20000,
+		RearDamping = 1800,
+		RearRelativeDamping = 1800,
 		
 		FastSteeringAngle = 10,
 		SteeringFadeFastSpeed = 400,
@@ -788,7 +792,7 @@ local V = {
 		
 		EngineSoundPreset = -1,
 		
-		snd_pitch = 1,
+		snd_pitch = 0.9,
 		snd_idle = "simulated_vehicles/generic5/generic5_idle.wav",
 		
 		snd_low = "simulated_vehicles/generic5/generic5_low.wav",
@@ -808,7 +812,7 @@ list.Set( "simfphys_vehicles", "sim_fphys_pwtrabant02", V )
 
 local V = {
 	Name = "HL2 Volga",
-	Model = "models/salza/volga/volga.mdl",
+	Model = "models/blu/volga/volga.mdl",
 	Class = "gmod_sent_vehicle_fphysics_base",
 	Category = Category,
 	SpawnAngleOffset = 90,
@@ -830,7 +834,7 @@ local V = {
 		CustomWheelPosRR = Vector(-55,-34,13),
 		CustomWheelAngleOffset = Angle(0,-90,0),
 		
-		CustomMassCenter = Vector(0,0,2.5),
+		CustomMassCenter = Vector(0,0,3.5),
 		
 		CustomSteerAngle = 35,
 		
@@ -863,13 +867,13 @@ local V = {
 		
 		FrontHeight = 6.5,
 		FrontConstant = 25000,
-		FrontDamping = 1500,
-		FrontRelativeDamping = 1500,
+		FrontDamping = 1300,
+		FrontRelativeDamping = 1300,
 		
 		RearHeight = 6.5,
 		RearConstant = 25000,
-		RearDamping = 1500,
-		RearRelativeDamping = 1500,
+		RearDamping = 1300,
+		RearRelativeDamping = 1300,
 		
 		FastSteeringAngle = 10,
 		SteeringFadeFastSpeed = 400,
@@ -915,7 +919,7 @@ list.Set( "simfphys_vehicles", "sim_fphys_pwvolga", V )
 
 local V = {
 	Name = "HL2 ZAZ",
-	Model = "models/salza/zaz/zaz.mdl",
+	Model = "models/blu/zaz/zaz.mdl",
 	Class = "gmod_sent_vehicle_fphysics_base",
 	Category = Category,
 	SpawnAngleOffset = 90,
@@ -937,7 +941,7 @@ local V = {
 		CustomWheelPosRR = Vector(-53,-34,17),
 		CustomWheelAngleOffset = Angle(0,90,0),
 		
-		CustomMassCenter = Vector(0,0,2.5),
+		CustomMassCenter = Vector(0,0,3.5),
 		
 		CustomSteerAngle = 35,
 		
@@ -972,13 +976,13 @@ local V = {
 		
 		FrontHeight = 6.5,
 		FrontConstant = 25000,
-		FrontDamping = 1500,
-		FrontRelativeDamping = 1500,
+		FrontDamping = 1300,
+		FrontRelativeDamping = 1300,
 		
 		RearHeight = 6.5,
 		RearConstant = 25000,
-		RearDamping = 1500,
-		RearRelativeDamping = 1500,
+		RearDamping = 1300,
+		RearRelativeDamping = 1300,
 		
 		FastSteeringAngle = 10,
 		SteeringFadeFastSpeed = 400,
@@ -1022,7 +1026,7 @@ list.Set( "simfphys_vehicles", "sim_fphys_pwzaz", V )
 
 local V = {
 	Name = "HL2 GAZ52",
-	Model = "models/salza/gaz52/gaz52.mdl",
+	Model = "models/blu/gaz52/gaz52.mdl",
 	Class = "gmod_sent_vehicle_fphysics_base",
 	Category = Category,
 
@@ -1058,12 +1062,12 @@ local V = {
 			}
 		},
 		
-		FrontHeight = 6.5,
+		FrontHeight = 8,
 		FrontConstant = 38000,
 		FrontDamping = 6000,
 		FrontRelativeDamping = 6000,
 		
-		RearHeight = 12,
+		RearHeight = 12.5,
 		RearConstant = 38000,
 		RearDamping = 6000,
 		RearRelativeDamping = 6000,
@@ -1111,7 +1115,7 @@ list.Set( "simfphys_vehicles", "sim_fphys_pwgaz52", V )
 
 local V = {
 	Name = "HL2 Liaz",
-	Model = "models/salza/skoda_liaz/skoda_liaz.mdl",
+	Model = "models/blu/skoda_liaz/skoda_liaz.mdl",
 	Class = "gmod_sent_vehicle_fphysics_base",
 	Category = Category,
 
@@ -1124,6 +1128,8 @@ local V = {
 		
 		CustomWheels = true,
 		CustomSuspensionTravel = 10,
+		
+		FirstPersonViewPos =  Vector(0,-10,12),
 		
 		CustomWheelModel = "models/salza/skoda_liaz/skoda_liaz_fwheel.mdl",
 		CustomWheelModel_R = "models/salza/skoda_liaz/skoda_liaz_rwheel.mdl",
@@ -1152,13 +1158,13 @@ local V = {
 		
 		FrontHeight = 16,
 		FrontConstant = 32000,
-		FrontDamping = 12000,
-		FrontRelativeDamping = 12000,
+		FrontDamping = 4000,
+		FrontRelativeDamping = 4000,
 		
-		RearHeight = 12.5,
-		RearConstant = 25000,
-		RearDamping = 6000,
-		RearRelativeDamping = 6000,
+		RearHeight = 13.5,
+		RearConstant = 20000,
+		RearDamping = 3000,
+		RearRelativeDamping = 2000,
 		
 		FastSteeringAngle = 10,
 		SteeringFadeFastSpeed = 600,
@@ -1166,13 +1172,13 @@ local V = {
 		TurnSpeed = 8,
 		
 		MaxGrip = 75,
-		Efficiency = 1,
-		GripOffset = -1,
+		Efficiency = 2,
+		GripOffset = -5,
 		BrakePower = 80,
 		
 		IdleRPM = 500,
 		LimitRPM = 5500,
-		PeakTorque = 125,
+		PeakTorque = 55,
 		PowerbandStart = 650,
 		PowerbandEnd = 5300,
 		Turbocharged = false,
@@ -1205,7 +1211,7 @@ list.Set( "simfphys_vehicles", "sim_fphys_pwliaz", V )
 
 local V = {
 	Name = "HL2 avia",
-	Model = "models/salza/avia/avia.mdl",
+	Model = "models/blu/avia/avia.mdl",
 	Class = "gmod_sent_vehicle_fphysics_base",
 	Category = Category,
 	SpawnAngleOffset = 90,
