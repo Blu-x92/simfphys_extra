@@ -939,11 +939,45 @@ local V = {
 		ExhaustPositions = {
 			{
 				pos = Vector(-122.25,20.93,-7.28),
-				ang = Angle(90,165,0)
+				ang = Angle(90,165,0),
+				OnBodyGroups = { 
+					[6] = {0},
+				}
 			},
 			{
 				pos = Vector(-122.1,-20.95,-7.42),
-				ang = Angle(90,195,0)
+				ang = Angle(90,195,0),
+				OnBodyGroups = { 
+					[6] = {0},
+				}
+			},
+			{
+				pos = Vector(-43.43,-38.07,-12.96),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[6] = {1},
+				}
+			},
+			{
+				pos = Vector(-35.28,-40.72,-13.18),
+				ang = Angle(90,-125,0),
+				OnBodyGroups = { 
+					[6] = {1},
+				}
+			},
+			{
+				pos = Vector(-43.43,38.07,-12.96),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[6] = {1},
+				}
+			},
+			{
+				pos = Vector(-35.28,40.72,-13.18),
+				ang = Angle(90,125,0),
+				OnBodyGroups = { 
+					[6] = {1},
+				}
 			}
 		},
 		
