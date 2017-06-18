@@ -14,6 +14,25 @@ local light_table = {
 		Vector(118.8,30.5,41.8),
 		Vector(118.8,-35,41.8)
 	},
+	
+	Turnsignal_sprites = {
+		Left = {
+			Vector(116.88,36.33,53.57),
+			Vector(115.4,37.9,53.59),
+			Vector(113.67,39.87,53.72),
+			Vector(-100.76,20.37,18.99),
+			Vector(-100.71,18.55,18.97),
+			Vector(-100.71,16.69,19.1),
+		},
+		Right = {
+			Vector(114.88,-40.33,53.57),
+			Vector(113.4,-41.9,53.59),
+			Vector(111.67,-43.87,53.72),
+			Vector(-100.76,-22.37,18.99),
+			Vector(-100.71,-20.55,18.97),
+			Vector(-100.71,-18.69,19.1),
+		},
+	}
 }
 list.Set( "simfphys_lights", "avia", light_table)
 
@@ -70,6 +89,17 @@ local light_table = {
 		Vector(-54,-70.56,55.19),
 		Vector(-50,73.98,57.71)
 	},
+	
+	Turnsignal_sprites = {
+		Left = {
+			Vector(-38.2,87.81,58.93),
+			Vector(-42.96,-193.67,28.29),
+		},
+		Right = {
+			Vector(37.8,87.41,58.52),
+			Vector(43.38,-194.54,28.99),
+		},
+	}
 }
 list.Set( "simfphys_lights", "gaz", light_table)
 
@@ -101,6 +131,21 @@ local light_table = {
 		Vector(-72,22,29),Vector(-72,23.5,29),Vector(-72,25,29),Vector(-72,26.5,29),Vector(-72,28,29),Vector(-72,29.5,29),Vector(-72,31,29),
 		Vector(-72,-22,29),Vector(-72,-23.5,29),Vector(-72,-25,29),Vector(-72,-26.5,29),Vector(-72,-28,29),Vector(-72,-29.5,29),Vector(-72,-31,29),
 	},
+	
+	Turnsignal_sprites = {
+		Left = {
+			Vector(-72.14,29.97,31.85),
+			Vector(-72.14,27.97,31.85),
+			Vector(-72.14,25.97,31.85),
+			Vector(72.19,24.97,20.34),
+		},
+		Right = {
+			Vector(-72.54,-30.32,31.81),
+			Vector(-72.54,-28.32,31.81),
+			Vector(-72.54,-26.32,31.81),
+			Vector(72.19,-24.6,20.34),
+		},
+	},
 }
 list.Set( "simfphys_lights", "golf", light_table)
 
@@ -130,13 +175,26 @@ local light_table = {
 		Vector(-47,-133.97,28.14),
 		Vector(44.13,-134.42,27.34),
 	},
-	Brakelight_sprites = {
-		Vector(-47,-133.97,28.14),
-		Vector(44.13,-134.42,27.34),
-	},
 	Reverselight_sprites = {
 		Vector(32.33,-134.11,27.34),
-	}
+	},
+	
+	Turnsignal_sprites = {
+		Left = {
+			Vector(-39.88,119.03,66.5),
+		},
+		Right = {
+			Vector(36.11,119.71,66.5),
+		},
+		
+		TurnBrakeLeft = {
+			Vector(-47,-133.97,28.14),
+		},
+		
+		TurnBrakeRight = {
+			Vector(44.13,-134.42,27.34),
+		},
+	},
 }
 list.Set( "simfphys_lights", "liaz", light_table)
 
@@ -173,7 +231,20 @@ local light_table = {
 	Reverselight_sprites = {
 		Vector(-99.98,27.41,30.76),
 		Vector(-99.98,-27.41,30.76)
-	}
+	},
+	
+	Turnsignal_sprites = {
+		Left = {
+			Vector(80.52,25.03,20.21),
+			Vector(80.47,23.03,20.25),
+			Vector(-100.5,18.95,29.97),
+		},
+		Right = {
+			Vector(80.52,-25.03,20.21),
+			Vector(80.47,-23.03,20.25),
+			Vector(-100.5,-18.95,29.97),
+		},
+	},
 }
 list.Set( "simfphys_lights", "moskvich", light_table)
 
@@ -208,6 +279,29 @@ local light_table = {
 		Vector(30.77,-76.39,20.09),
 		Vector(-31.01,-76.14,20.29),
 	},
+	
+	Turnsignal_sprites = {
+		Left = {
+			Vector(-28.5,70.97,20.41),
+			Vector(-30,70.97,20.41),
+			Vector(-31.5,70.97,20.41),
+			
+			Vector(-30.63,-79,34),
+			Vector(-30.63,-79.,32),
+			Vector(-30.63,-79,30),
+			Vector(-30.63,-79,28),
+		},
+		Right = {
+			Vector(28.5,70.97,20.41),
+			Vector(30,70.97,20.41),
+			Vector(31.5,70.97,20.41),
+			
+			Vector(30.63,-79,34),
+			Vector(30.63,-79.,32),
+			Vector(30.63,-79,30),
+			Vector(30.63,-79,28),
+		},
+	}
 }
 list.Set( "simfphys_lights", "trabbi", light_table)
 
@@ -237,16 +331,28 @@ local light_table = {
 		{pos = Vector(-117,32.5,41),material = "sprites/light_ignorez",size = 35,color = Color( 255, 60, 0,  125)},
 		{pos = Vector(-117,32.5,41),size = 45,color = Color( 255, 0, 0,  250)},
 	},
-	Brakelight_sprites = {
-		{pos = Vector(-117,-32.5,41),material = "sprites/light_ignorez",size = 50},
-		{pos = Vector(-117,-32.5,41),size = 55},
-		
-		{pos = Vector(-117,32.5,41),material = "sprites/light_ignorez",size = 50},
-		{pos = Vector(-117,32.5,41),size = 55},
-	},
 	Reverselight_sprites = {
 		Vector(-117,-32.5,45),Vector(-117,-34.5,45),Vector(-117,-30.5,45),
 		Vector(-117,32.5,45),Vector(-117,34.5,45),Vector(-117,30.5,45)
+	},
+	
+	Turnsignal_sprites = {
+		Left = {
+			Vector(96.64,36.27,27.21),
+			Vector(96.64,35,27.21),
+		},
+		Right = {
+			Vector(96.64,-36.27,27.21),
+			Vector(96.64,-35,27.21),
+		},
+		TurnBrakeLeft = {
+			{pos = Vector(-117,32.5,41),material = "sprites/light_ignorez",size = 50},
+			{pos = Vector(-117,32.5,41),size = 55},
+		},
+		TurnBrakeRight = {
+			{pos = Vector(-117,-32.5,41),material = "sprites/light_ignorez",size = 50},
+			{pos = Vector(-117,-32.5,41),size = 55},
+		},
 	},
 }
 list.Set( "simfphys_lights", "van", light_table)
@@ -271,23 +377,37 @@ local light_table = {
 		Vector(91.33,-30.44,30.63)
 	},
 	Rearlight_sprites = {
-		{pos = Vector(-102.2,-30,34),material = "sprites/light_ignorez",size = 35,color = Color( 255, 60, 0,  125)},
-		{pos = Vector(-102.2,-30,34),size = 45,color = Color( 255, 0, 0,  90)},
+		{pos = Vector(-102.23,30,35.85),material = "sprites/light_ignorez",size = 35,color = Color( 255, 60, 0,  125)},
+		{pos = Vector(-102.23,30,35.85),size = 45,color = Color( 255, 0, 0,  90)},
 		
-		{pos = Vector(-102.2,30,34),material = "sprites/light_ignorez",size = 35,color = Color( 255, 60, 0,  125)},
-		{pos = Vector(-102.2,30,34),size = 45,color = Color( 255, 0, 0,  90)},
+		{pos = Vector(-102.23,-30,35.85),material = "sprites/light_ignorez",size = 35,color = Color( 255, 60, 0,  125)},
+		{pos = Vector(-102.23,-30,35.85),size = 45,color = Color( 255, 0, 0,  90)},
 	},
 	Brakelight_sprites = {
-		{pos = Vector(-102.2,-30,34),material = "sprites/light_ignorez",size = 45,color = Color( 255, 60, 0,  125)},
-		{pos = Vector(-102.2,-30,34),size = 50,color = Color( 255, 0, 0,  150)},
+		{pos = Vector(-102.23,-30,35.85),material = "sprites/light_ignorez",size = 45,color = Color( 255, 60, 0,  125)},
+		{pos = Vector(-102.23,-30,35.85),size = 50,color = Color( 255, 0, 0,  150)},
 		
-		{pos = Vector(-102.2,30,34),material = "sprites/light_ignorez",size = 45,color = Color( 255, 60, 0,  125)},
-		{pos = Vector(-102.2,30,34),size = 50,color = Color( 255, 0, 0,  150)},
+		{pos = Vector(-102.23,30,35.85),material = "sprites/light_ignorez",size = 45,color = Color( 255, 60, 0,  125)},
+		{pos = Vector(-102.23,30,35.85),size = 50,color = Color( 255, 0, 0,  150)},
 	},
 	Reverselight_sprites = {
 		Vector(-101.8,-29.4,30.7),Vector(-101.8,-31.09,30.7),
 		Vector(-101.8,29.4,30.7),Vector(-101.8,31.09,30.7),
-	}
+	},
+	Turnsignal_sprites = {
+		Left = {
+			Vector(-102.62,31,33.24),
+			Vector(-102.62,29,33.24),
+			Vector(92.09,31,22.4),
+			Vector(91.71,33,22.4),
+		},
+		Right = {
+			Vector(-102.62,-31,33.24),
+			Vector(-102.62,-29,33.24),
+			Vector(92.09,-31,22.4),
+			Vector(91.71,-33,22.4),
+		},
+	},
 }
 list.Set( "simfphys_lights", "volga", light_table)
 
@@ -322,6 +442,19 @@ local light_table = {
 	Reverselight_sprites = {
 		Vector(-95.5,18.25,34.8),Vector(-95.5,18.25,33.4),Vector(-95.5,18.25,32.6),Vector(-95.5,18.25,31.2),
 		Vector(-95.5,-20.75,34.8),Vector(-95.5,-20.75,33.4),Vector(-95.5,-20.75,32.6),Vector(-95.5,-20.75,31.2)
+	},
+	Turnsignal_sprites = {
+		Left = {
+			Vector(86.78,22.39,31.92),
+			Vector(-95.41,26.7,33.76),
+			Vector(-95.42,26.72,32.22),
+		},
+
+		Right = {
+			Vector(86.78,-24.39,31.92),
+			Vector(-95.41,-28.7,33.76),
+			Vector(-95.42,-28.72,32.22),
+		},
 	},
 }
 list.Set( "simfphys_lights", "zaz", light_table)

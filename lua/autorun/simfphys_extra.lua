@@ -53,6 +53,7 @@ local light_table = {
 		Vector(-42.87,-101.7,35.71),
 		Vector(42.87,-101.7,35.71)
 	},
+	--[[
 	FogLight_sprites = {
 		{pos = Vector(-26.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
 		{pos = Vector(-27.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
@@ -70,6 +71,35 @@ local light_table = {
 		{pos = Vector(31.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
 		{pos = Vector(32.06,109.39,15.74),material = "sprites/light_ignorez",size = 12, color = Color( 220,220,220,100)},
 	},
+	]]--
+	
+	Turnsignal_sprites = {
+		Left = {
+			Vector(-30,-109.16,40.87),
+			Vector(-30,-109.31,38.06),
+			
+			{pos = Vector(-26.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+			{pos = Vector(-27.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+			{pos = Vector(-28.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+			{pos = Vector(-29.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+			{pos = Vector(-30.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+			{pos = Vector(-31.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+			{pos = Vector(-32.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+		},
+		Right = {
+			Vector(29,-109.16,40.87),
+			Vector(29,-109.31,38.06),
+			
+			{pos = Vector(26.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+			{pos = Vector(27.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+			{pos = Vector(28.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+			{pos = Vector(29.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+			{pos = Vector(30.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+			{pos = Vector(31.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+			{pos = Vector(32.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
+		},
+	 },
+
 	
 	ems_sounds = {"simulated_vehicles/police/siren_madmax.wav","common/null.wav"},
 	ems_sprites = {
@@ -241,10 +271,6 @@ local light_table = {
 		Vector(33.5,-120,36),Vector(31.9,-120,36),Vector(30.3,-120,36),Vector(28.7,-120,36),Vector(27.1,-120,36),Vector(25.5,-120,36),Vector(23.9,-120,36),Vector(22.3,-120,36),Vector(20.7,-120,36),Vector(19.1,-120,36),Vector(17.5,-120,36),Vector(15.9,-120,36),Vector(14.3,-120,36),Vector(12.7,-120,36),Vector(11.1,-120,36),Vector(9.5,-120,36),Vector(7.9,-120,36),
 		Vector(-33.5,-120,36),Vector(-31.9,-120,36),Vector(-30.3,-120,36),Vector(-28.7,-120,36),Vector(-27.1,-120,36),Vector(-25.5,-120,36),Vector(-23.9,-120,36),Vector(-22.3,-120,36),Vector(-20.7,-120,36),Vector(-19.1,-120,36),Vector(-17.5,-120,36),Vector(-15.9,-120,36),Vector(-14.3,-120,36),Vector(-12.7,-120,36),Vector(-11.1,-120,36),Vector(-9.5,-120,36),Vector(-7.9,-120,36)
 	},
-	Brakelight_sprites = {
-		Vector(33.5,-120,36),Vector(31.9,-120,36),Vector(30.3,-120,36),Vector(28.7,-120,36),Vector(27.1,-120,36),Vector(25.5,-120,36),Vector(23.9,-120,36),Vector(22.3,-120,36),Vector(20.7,-120,36),Vector(19.1,-120,36),Vector(17.5,-120,36),Vector(15.9,-120,36),Vector(14.3,-120,36),Vector(12.7,-120,36),Vector(11.1,-120,36),Vector(9.5,-120,36),Vector(7.9,-120,36),
-		Vector(-33.5,-120,36),Vector(-31.9,-120,36),Vector(-30.3,-120,36),Vector(-28.7,-120,36),Vector(-27.1,-120,36),Vector(-25.5,-120,36),Vector(-23.9,-120,36),Vector(-22.3,-120,36),Vector(-20.7,-120,36),Vector(-19.1,-120,36),Vector(-17.5,-120,36),Vector(-15.9,-120,36),Vector(-14.3,-120,36),Vector(-12.7,-120,36),Vector(-11.1,-120,36),Vector(-9.5,-120,36),Vector(-7.9,-120,36)
-	},
 	Reverselight_sprites = {
 		Vector(-17.6,-121.1,23.1),
 		Vector(17.6,-121.1,23.1)
@@ -258,6 +284,25 @@ local light_table = {
 	RearMarker_sprites = {
 		Vector(-41.5,-113,28),
 		Vector(41.5,-113,28)
+	},
+	
+	Turnsignal_sprites = {
+		Left = {
+			Vector(-30,120.5,18),
+			Vector(-42.5,110.3,24.4),
+		},
+		Right = {
+			Vector(30,120.5,18),
+			Vector(42.5,110.3,24.4)
+		},
+		
+		TurnBrakeLeft = {
+			Vector(-33.5,-120,36),Vector(-31.9,-120,36),Vector(-30.3,-120,36),Vector(-28.7,-120,36),Vector(-27.1,-120,36),Vector(-25.5,-120,36),Vector(-23.9,-120,36),Vector(-22.3,-120,36),Vector(-20.7,-120,36),Vector(-19.1,-120,36),Vector(-17.5,-120,36),Vector(-15.9,-120,36),
+		},
+		
+		TurnBrakeRight = {
+			Vector(33.5,-120,36),Vector(31.9,-120,36),Vector(30.3,-120,36),Vector(28.7,-120,36),Vector(27.1,-120,36),Vector(25.5,-120,36),Vector(23.9,-120,36),Vector(22.3,-120,36),Vector(20.7,-120,36),Vector(19.1,-120,36),Vector(17.5,-120,36),Vector(15.9,-120,36),
+		},
 	},
 	
 	DelayOn = 2.1,
