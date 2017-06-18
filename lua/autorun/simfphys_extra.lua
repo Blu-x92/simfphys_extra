@@ -98,7 +98,7 @@ local light_table = {
 			{pos = Vector(31.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
 			{pos = Vector(32.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
 		},
-	 },
+	},
 
 	
 	ems_sounds = {"simulated_vehicles/police/siren_madmax.wav","common/null.wav"},
@@ -193,6 +193,19 @@ local light_table = {
 	BodyGroups = {
 		On = {8,0},
 		Off = {8,1}
+	},
+	
+	Turnsignal_sprites = {
+		Left = {
+			Vector(103.28,27,-9.54),
+			Vector(103.28,28.5,-9.54),
+			{pos = Vector(-121,25.5,5),material = "sprites/light_ignorez",size = 55,color = Color( 255, 0, 0,  165)},
+		},
+		Right = {
+			Vector(103.28,-27,-9.54),
+			Vector(103.28,-28.5,-9.54),
+			{pos = Vector(-121,-25.5,5),material = "sprites/light_ignorez",size = 55,color = Color( 255, 0, 0,  165)},
+		},
 	},
 	
 	SubMaterials = {
