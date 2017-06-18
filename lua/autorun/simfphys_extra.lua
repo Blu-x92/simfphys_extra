@@ -87,8 +87,8 @@ local light_table = {
 			{pos = Vector(-32.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
 		},
 		Right = {
-			Vector(29,-109.16,40.87),
-			Vector(29,-109.31,38.06),
+			Vector(29.5,-109.16,40.87),
+			Vector(29.5,-109.31,38.06),
 			
 			{pos = Vector(26.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
 			{pos = Vector(27.06,109.39,15.74),material = "sprites/light_ignorez",size = 20},
