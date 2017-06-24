@@ -484,6 +484,9 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 65,
+		
 		PowerBias = 0.6,
 		
 		EngineSoundPreset = -1,
@@ -577,6 +580,9 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 65,
+		
 		PowerBias = 1,
 		
 		EngineSoundPreset = -1,
@@ -667,6 +673,9 @@ local V = {
 		PowerbandEnd = 5400,
 		Turbocharged = false,
 		Supercharged = false,
+		
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 80,
 		
 		PowerBias = 1,
 		
@@ -806,6 +815,9 @@ local V = {
 		Turbocharged = false,
 		Supercharged = true,
 		
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 100,
+		
 		PowerBias = 1,
 		
 		EngineSoundPreset = -1,
@@ -928,6 +940,9 @@ local V = {
 		PowerbandEnd = 7000,
 		Turbocharged = true,
 		Supercharged = false,
+		
+		FuelType = FUELTYPE_DIESEL,
+		FuelTankSize = 65,
 		
 		PowerBias = 0,
 		
@@ -1066,6 +1081,9 @@ local V = {
 		PowerbandEnd = 7400,
 		Turbocharged = false,
 		Supercharged = false,
+		
+		FuelType = FUELTYPE_PETROL,
+		FuelTankSize = 80,
 		
 		PowerBias = 1,
 		
