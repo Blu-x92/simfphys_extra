@@ -534,6 +534,7 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
+		FuelFillPos = Vector(-61.59,32.11,31.83),
 		FuelType = FUELTYPE_PETROL,
 		FuelTankSize = 65,
 		
@@ -635,6 +636,7 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
+		FuelFillPos = Vector(-93.45,46.02,42.24),
 		FuelType = FUELTYPE_PETROL,
 		FuelTankSize = 65,
 		
@@ -735,6 +737,7 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
+		FuelFillPos = Vector(-78.34,33.36,33.18),
 		FuelType = FUELTYPE_PETROL,
 		FuelTankSize = 65,
 		
@@ -837,6 +840,7 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
+		FuelFillPos = Vector(5.41,46.61,39.91),
 		FuelType = FUELTYPE_PETROL,
 		FuelTankSize = 65,
 		
@@ -937,6 +941,7 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
+		FuelFillPos = Vector(5.41,46.61,39.91),
 		FuelType = FUELTYPE_PETROL,
 		FuelTankSize = 65,
 		
@@ -1045,6 +1050,7 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
+		FuelFillPos = Vector(-80.3,37.79,35.54),
 		FuelType = FUELTYPE_PETROL,
 		FuelTankSize = 65,
 		
@@ -1157,6 +1163,7 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
+		FuelFillPos = Vector(-67.9,-37.75,38.59),
 		FuelType = FUELTYPE_PETROL,
 		FuelTankSize = 65,
 		
@@ -1248,6 +1255,7 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
+		FuelFillPos = Vector(-25.29,-34.76,50),
 		FuelType = FUELTYPE_DIESEL,
 		FuelTankSize = 140,
 		
@@ -1345,6 +1353,7 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
+		FuelFillPos = Vector(-17.8,2.09,51.93),
 		FuelType = FUELTYPE_DIESEL,
 		FuelTankSize = 140,
 		
@@ -1440,6 +1449,7 @@ local V = {
 		Turbocharged = false,
 		Supercharged = false,
 		
+		FuelFillPos = Vector(9.79,35.14,30.77),
 		FuelType = FUELTYPE_DIESEL,
 		FuelTankSize = 100,
 		
