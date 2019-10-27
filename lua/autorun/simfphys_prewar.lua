@@ -368,6 +368,34 @@ local light_table = {
 	R_RearLampPos = Vector( -102.69,-29.97,34.21),
 	R_RearLampAng = Angle(45,180,0),
 	
+	--[[
+	DrawTexture ={
+		{mat = Material( "vgui/simfphys_square" ), col = Color(255,0,0,100),pos = Vector(-102.5,30,36.5),ang = Angle(0,-90,70), Length = 5, Width = 3,trigger = "running"},
+		{mat = Material( "vgui/simfphys_square" ), col = Color(255,0,0,100),pos = Vector(-102.5,-30,36.5),ang = Angle(0,-90,70), Length = 5, Width = 3,trigger = "running"},
+		
+		{mat = Material( "vgui/simfphys_square" ), col = Color(255,0,0,255),pos = Vector(-102.5,30,36.5),ang = Angle(0,-90,70), Length = 5, Width = 3,trigger = "brake"},
+		{mat = Material( "vgui/simfphys_square" ), col = Color(255,0,0,255),pos = Vector(-102.5,-30,36.5),ang = Angle(0,-90,70), Length = 5, Width = 3,trigger = "brake"},
+		
+		{mat = Material( "vgui/simfphys_square" ), col = Color(255,255,255,100),pos = Vector(-102.5,-30,31),ang = Angle(0,-90,95), Length = 5, Width = 2,trigger = "reverse"},
+		{mat = Material( "vgui/simfphys_square" ), col = Color(255,255,255,100),pos = Vector(-102.5,30,31),ang = Angle(0,-90,95), Length = 5, Width = 2,trigger = "reverse"},
+		
+		{mat = Material( "vgui/simfphys_square" ), col = Color(255,150,0,100),pos = Vector(-103,-30,33),ang = Angle(0,-90,95), Length = 5, Width = 2,trigger = "turn_right"},
+		{mat = Material( "vgui/simfphys_square" ), col = Color(255,150,0,100),pos = Vector(-103,30,33),ang = Angle(0,-90,95), Length = 5, Width = 2,trigger = "turn_left"},
+		
+		{mat = Material( "vgui/simfphys_square" ), col = Color(255,150,0,100),pos = Vector(92,-31.5,22.5),ang = Angle(0,90,90), Length = 8, Width = 2.5,trigger = "turn_right"},
+		{mat = Material( "vgui/simfphys_square" ), col = Color(255,150,0,100),pos = Vector(92,32,22.5),ang = Angle(0,90,90), Length = 8, Width = 2.5,trigger = "turn_left"},
+		
+		{mat	= Material( "vgui/simfphys_circle" ), col = Color(220,205,160,100),pos = Vector(92,30.44,30.63),ang = Angle(0,90,90), Length = 8, Width = 8,trigger = "running"},
+		{mat = Material( "vgui/simfphys_circle" ), col = Color(220,205,160,100),pos = Vector(92,-30.44,30.63),ang = Angle(0,90,90), Length = 8, Width = 8,trigger = "running"},
+		
+		{mat = Material( "vgui/simfphys_circle" ), col = Color(220,205,160,255),pos = Vector(92,30.44,30.63),ang = Angle(0,90,90), Length = 8, Width = 8,trigger = "highbeam"},
+		{mat = Material( "vgui/simfphys_circle" ), col = Color(220,205,160,255),pos = Vector(92,-30.44,30.63),ang = Angle(0,90,90), Length = 8, Width = 8,trigger = "highbeam"},
+		--"fog"
+		--"turn_left"
+		--"turn_right"
+	},
+	]]--
+
 	Headlight_sprites = { 
 		Vector(91.33,30.44,30.63),
 		Vector(91.33,-30.44,30.63)
